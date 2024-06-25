@@ -21,4 +21,13 @@ function renderChart(data) {
     const svg = d3.select("#chart").append("svg")
     .attr("width", 600)
     .attr("height", 600);
+
+document.getElementById('stockSelector').addEventListener('change', function() {
+    updateVisualization();
+});
+function updateVisualization() {
+    const stockName = document.getElementById('stockSelector').value;
+    let filteredData = filterData(stockName, '2023-01-01', '2023-01-31');
+    renderChart(filteredData);
+}
 }
