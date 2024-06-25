@@ -16,3 +16,9 @@ d3.csv("mock_stock_data.csv").then(function(data) {
     let filteredData = filterData('Apple', '2023-01-01', '2023-01-05');
     console.log(filteredData);
 });
+
+function renderChart(data) {
+    const svg = d3.select("#chart").append("svg")
+    .attr("width", 600)
+    .attr("height", 600);
+}
