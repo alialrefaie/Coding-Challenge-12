@@ -1,8 +1,14 @@
 body {
     font-family: 'Arial', sans-serif;
-    padding: 20px;
+    margin: 40px;
+    background: #f4f4f4;
+    color: #333;
 }
 
-#chart svg {
+#chart {
+    width:600px;
+    height:600px;
     border: 1px solid #ccc;
+    margin: auto;
+    background: #fff;
 }
